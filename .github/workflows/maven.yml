@@ -30,7 +30,7 @@ jobs:
         architecture: x64
 
     - name: Run LeapYearTests
-      run: mvn test -Dtest=com.oblig2.LeapYearTest
+      run: mvn test -Dtest=LeapYearTest
 
     - name: Upload Test Results
       uses: actions/upload-artifact@v2
