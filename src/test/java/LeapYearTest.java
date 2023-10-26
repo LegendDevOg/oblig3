@@ -1,8 +1,5 @@
-package com.oblig2;
-
 import org.junit.jupiter.api.Test;
 
-import static com.oblig2.LeapYearTest.LeapYear.isLeapYear;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -11,13 +8,13 @@ public class LeapYearTest {
     // Here I test to see if the leap year is dividable by 4 AND NOT 100
     @Test
     public void isYearDividableBy4Not100() {
-        assertTrue(isLeapYear(2020));
+        assertTrue(LeapYear.isLeapYear(2020));
     }
 
     // Here I test to see if the leap year is dividable by 400
     @Test
     public void isYearDividableBy400() {
-        assertTrue(isLeapYear(2000));
+        assertTrue(LeapYear.isLeapYear(2000));
 
 
 
@@ -26,13 +23,13 @@ public class LeapYearTest {
     // Here I test to see if the leap year is NOT dividable by 4
     @Test
     public void isYearNotDividableBy4() {
-        assertFalse(isLeapYear(1703));
+        assertFalse(LeapYear.isLeapYear(1703));
     }
 
     // Here I test to see if the leap year is dividable by 100 AND NOT 400
     @Test
     public void isYearDividableBy100Not400() {
-        assertFalse(isLeapYear(1700));
+        assertFalse(LeapYear.isLeapYear(1700));
     }
 
     public static class LeapYear {
